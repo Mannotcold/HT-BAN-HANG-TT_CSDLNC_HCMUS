@@ -18,8 +18,5 @@ D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Menu.resources
 D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.ThongKe_SLDH.resources
 D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Xem_DonHang.resources
 D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Xem_LichSuLuong.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.QuanTri.Menu.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.QuanTri.QuanLy_SanPham.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.QuanTri.Xem_Kho.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.QuanTri.Xem_PhieuNhap.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.QuanTri.Xem_PhieuXuat.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Duyet_Thanh_Vien.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Menu.resources

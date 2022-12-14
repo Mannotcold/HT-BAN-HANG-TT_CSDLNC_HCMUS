@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using TestAPP.Register;
+using TestAPP.QuanTri;
 
 namespace Login
 {
@@ -29,7 +30,7 @@ namespace Login
 
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANG_TT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
 
@@ -52,9 +53,10 @@ namespace Login
             {
                 string username = textBox1.Text;
                 string password = textBox2.Text;
+                String TYPE = "True";
                 //string account_type = "";
                 connection.Open();
-                string sql = "select * from TAIKHOAN WHERE TEN_TK = '" + username + "' AND MATKHAU = '" + password + "'";
+                string sql = "select * from TAIKHOAN WHERE TEN_TK = '" + username + "' AND MATKHAU = '" + password + "' AND TRANGTHAI = '" + TYPE + "'";
 
                 SqlCommand com = new SqlCommand(sql, connection);
                 //Lấy dữ liệu về từ kết quả câu lệnh trên
@@ -64,8 +66,7 @@ namespace Login
                 
                 if (dta.Read() == true)
                 {
-                    string result = $"Bạn đã đăng nhập thành công";
-                    MessageBox.Show("Thành công");
+                    MessageBox.Show("Bạn đã đăng nhập thành công");
                     string account_type = dta.GetString(2);
                     MessageBox.Show(account_type);
                     if (account_type == "KH")
@@ -91,7 +92,7 @@ namespace Login
                     }
                     else if (account_type == "QT")
                     {
-                        Form formKhachHang = new QuanTri.Menu();
+                        Form formKhachHang = new TestAPP.QuanTri.Menu();
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
@@ -99,7 +100,7 @@ namespace Login
                 }
                 else
                 {
-                    MessageBox.Show("sai");
+                    MessageBox.Show("Bạn đăng nhập không thành công");
                 }
 
                 

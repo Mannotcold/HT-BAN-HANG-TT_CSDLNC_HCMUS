@@ -34,6 +34,7 @@ namespace TestAPP.Register
         }
 
         string acount_type = "";
+        string type = "False";
         //SqlConnection cnn;
         //SqlCommand command;
         //string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANG_TT;Integrated Security=True";
@@ -41,7 +42,7 @@ namespace TestAPP.Register
         //DataTable table = new DataTable();
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANG_TT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         //void loaddata()
@@ -75,7 +76,7 @@ namespace TestAPP.Register
                         acount_type = "TX";
                     }
                     connection.Open();
-                string sql = "insert into TAIKHOAN values ('" + username + "', '" + password + "','" + acount_type + "' ";
+                string sql = "insert into TAIKHOAN values ('" + username + "', '" + password + "','" + acount_type + "','" + type + "' ";
 
                 SqlCommand com = new SqlCommand();
                 //Lấy dữ liệu về từ kết quả câu lệnh trên
@@ -83,17 +84,17 @@ namespace TestAPP.Register
                 //ExecuteNonquery(); với inserrt update delete
                 //com.ExecuteNonQuery();
                 com.CommandType = CommandType.Text;
-                com.CommandText = "insert into TAIKHOAN(TEN_TK,MATKHAU,LOAI_TK) VALUES ('" + username + "','" + password + "','" + acount_type + "')";
+                com.CommandText = "insert into TAIKHOAN(TEN_TK,MATKHAU,LOAI_TK,TRANGTHAI) VALUES ('" + username + "','" + password + "','" + acount_type + "','" + type + "')";
                 com.Connection = connection;
                 //loaddata();
                 int kq = com.ExecuteNonQuery();
                 if (kq > 0)
                 {
-                    MessageBox.Show("Thêm Thanh cong");
+                    MessageBox.Show("Đăng ký thàng công! Vui lòng đợi trong vài phút để quản tri viên xét duyệt.");
                 }
                 else
                 {
-                    MessageBox.Show("Thêm không thanh cong");
+                    MessageBox.Show("Đăng ký không thàng công! Vui lòng xem lại tài khoản/mật khẩu.");
                 }
 
 
