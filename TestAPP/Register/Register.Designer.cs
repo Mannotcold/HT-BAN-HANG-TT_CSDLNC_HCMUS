@@ -49,15 +49,15 @@ namespace TestAPP.Register
             this.label2.Location = new System.Drawing.Point(32, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(291, 31);
+            this.label2.Size = new System.Drawing.Size(312, 31);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Đăng ký AppGiaoHang";
+            this.label2.Text = "Đăng ký Foood Paradise";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 144);
+            this.label1.Location = new System.Drawing.Point(52, 114);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 20);
@@ -68,7 +68,7 @@ namespace TestAPP.Register
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 102);
+            this.label3.Location = new System.Drawing.Point(52, 72);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 20);
@@ -77,7 +77,7 @@ namespace TestAPP.Register
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(158, 147);
+            this.textBox3.Location = new System.Drawing.Point(176, 117);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(144, 20);
@@ -85,7 +85,7 @@ namespace TestAPP.Register
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 104);
+            this.textBox1.Location = new System.Drawing.Point(176, 74);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 20);
@@ -95,7 +95,7 @@ namespace TestAPP.Register
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(34, 260);
+            this.label5.Location = new System.Drawing.Point(101, 157);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(167, 20);
@@ -105,7 +105,7 @@ namespace TestAPP.Register
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(38, 299);
+            this.checkBox1.Location = new System.Drawing.Point(56, 209);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(84, 17);
             this.checkBox1.TabIndex = 17;
@@ -115,7 +115,7 @@ namespace TestAPP.Register
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(38, 403);
+            this.checkBox2.Location = new System.Drawing.Point(56, 313);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(55, 17);
             this.checkBox2.TabIndex = 18;
@@ -125,7 +125,7 @@ namespace TestAPP.Register
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(38, 352);
+            this.checkBox3.Location = new System.Drawing.Point(56, 262);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(75, 17);
             this.checkBox3.TabIndex = 19;
@@ -137,7 +137,7 @@ namespace TestAPP.Register
             // 
             this.button1.BackColor = System.Drawing.Color.SpringGreen;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(117, 440);
+            this.button1.Location = new System.Drawing.Point(135, 359);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 22;
@@ -149,7 +149,7 @@ namespace TestAPP.Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 483);
+            this.ClientSize = new System.Drawing.Size(362, 397);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);

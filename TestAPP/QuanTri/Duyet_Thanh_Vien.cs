@@ -41,5 +41,30 @@ namespace TestAPP.QuanTri
             connection.Open();
             loaddata();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(str);
+            connection.Open();
+            string TaiKhoan = textBox1.Text;
+            string sql = "select * from TAIKHOAN WHERE TEN_TK = '" + TaiKhoan + "'";
+            command = connection.CreateCommand();
+            command.CommandText = "select * from TAIKHOAN WHERE TEN_TK = '" + TaiKhoan + "'";
+            adapter.SelectCommand = command;
+            table.Clear();
+            adapter.Fill(table);
+            dataGridView1.DataSource = table;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(str);
+            connection.Open();
+            string type = "True";
+            command = connection.CreateCommand();
+            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "'";
+            command.ExecuteNonQuery();
+            MessageBox.Show("Xét duyệt thành công!");
+        }
     }
 }

@@ -9,14 +9,8 @@ D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.csproj.CoreCompileInputs.cache
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.exe
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.pdb
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.Register.Register.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.KhachHang.Menu.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.KhachHang.Xem_LichSuMuaHang.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.KhachHang.Xem_SP.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.KhachHang.Xem_ThongTinCaNhan.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.DiemDanh.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Menu.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.ThongKe_SLDH.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Xem_DonHang.resources
-D:\CSDLNC2\TestAPP\obj\Debug\Login.NhanSu.Xem_LichSuLuong.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Duyet_Thanh_Vien.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Menu.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Menu.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Menu.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.TaiXe.Menu.resources

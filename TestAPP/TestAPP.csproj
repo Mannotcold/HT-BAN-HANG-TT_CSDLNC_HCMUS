@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanTri\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,60 +76,6 @@
     <Compile Include="QuanTri\Duyet_Thanh_Vien.Designer.cs">
       <DependentUpon>Duyet_Thanh_Vien.cs</DependentUpon>
     </Compile>
-    <Compile Include="TaiXe\Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaiXe\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TaiXe\Xem_LichSuMuaHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaiXe\Xem_LichSuMuaHang.Designer.cs">
-      <DependentUpon>Xem_LichSuMuaHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TaiXe\Xem_SP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaiXe\Xem_SP.Designer.cs">
-      <DependentUpon>Xem_SP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TaiXe\Xem_ThongTinCaNhan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaiXe\Xem_ThongTinCaNhan.Designer.cs">
-      <DependentUpon>Xem_ThongTinCaNhan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NhanSu\DiemDanh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanSu\DiemDanh.Designer.cs">
-      <DependentUpon>DiemDanh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NhanSu\Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanSu\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NhanSu\ThongKe_SLDH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanSu\ThongKe_SLDH.Designer.cs">
-      <DependentUpon>ThongKe_SLDH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NhanSu\Xem_DonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanSu\Xem_DonHang.Designer.cs">
-      <DependentUpon>Xem_DonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NhanSu\Xem_LichSuLuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NhanSu\Xem_LichSuLuong.Designer.cs">
-      <DependentUpon>Xem_LichSuLuong.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register\Register.cs">
@@ -126,41 +84,26 @@
     <Compile Include="Register\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaiXe\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiXe\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanTri\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanTri\Duyet_Thanh_Vien.resx">
       <DependentUpon>Duyet_Thanh_Vien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaiXe\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaiXe\Xem_LichSuMuaHang.resx">
-      <DependentUpon>Xem_LichSuMuaHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaiXe\Xem_SP.resx">
-      <DependentUpon>Xem_SP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaiXe\Xem_ThongTinCaNhan.resx">
-      <DependentUpon>Xem_ThongTinCaNhan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhanSu\DiemDanh.resx">
-      <DependentUpon>DiemDanh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhanSu\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhanSu\ThongKe_SLDH.resx">
-      <DependentUpon>ThongKe_SLDH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhanSu\Xem_DonHang.resx">
-      <DependentUpon>Xem_DonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NhanSu\Xem_LichSuLuong.resx">
-      <DependentUpon>Xem_LichSuLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Register\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiXe\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -187,6 +133,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DoiTac\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

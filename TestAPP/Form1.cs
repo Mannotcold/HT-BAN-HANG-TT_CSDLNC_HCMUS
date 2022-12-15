@@ -34,17 +34,6 @@ namespace Login
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
 
-        //Hiển thị data
-        //void loaddata()
-        //{
-        //    command = connection.CreateCommand();
-        //    command.CommandText = "select * from TAIKHOAN";
-        //    adapter.SelectCommand = command;
-        //    table.Clear();
-        //    adapter.Fill(table);
-        //    dataGridView1.DataSource = table;
-        //}
-
         //đăng nhập
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,7 +43,6 @@ namespace Login
                 string username = textBox1.Text;
                 string password = textBox2.Text;
                 String TYPE = "True";
-                //string account_type = "";
                 connection.Open();
                 string sql = "select * from TAIKHOAN WHERE TEN_TK = '" + username + "' AND MATKHAU = '" + password + "' AND TRANGTHAI = '" + TYPE + "'";
 
@@ -68,24 +56,23 @@ namespace Login
                 {
                     MessageBox.Show("Bạn đã đăng nhập thành công");
                     string account_type = dta.GetString(2);
-                    MessageBox.Show(account_type);
                     if (account_type == "KH")
                     {
-                        //Form formKhachHang = new KhachHang.Menu(ma);
-                        //this.Hide();
-                        //formKhachHang.ShowDialog();
-                        //this.Close();
+                        Form formKhachHang = new TestAPP.KhachHang.Menu();
+                        this.Hide();
+                        formKhachHang.ShowDialog();
+                        this.Close();
                     }
                     else if (account_type == "NV")
                     {
-                        Form formKhachHang = new NhanSu.Menu();
+                        Form formKhachHang = new TestAPP.NhanVien.Menu();
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
                     }
                     else if (account_type == "TX")
                     {
-                        Form formKhachHang = new TaiXe.Menu();
+                        Form formKhachHang = new TestAPP.TaiXe.Menu();
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
@@ -141,12 +128,5 @@ namespace Login
         {
 
         }
-    }
-}
-
-namespace TaiXe
-{
-    class Menu : Form
-    {
     }
 }
