@@ -58,28 +58,35 @@ namespace Login
                     string account_type = dta.GetString(2);
                     if (account_type == "KH")
                     {
-                        Form formKhachHang = new TestAPP.KhachHang.Menu();
+                        Form formKhachHang = new TestAPP.KhachHang.Menu(username);
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
                     }
                     else if (account_type == "NV")
                     {
-                        Form formKhachHang = new TestAPP.NhanVien.Menu();
+                        Form formKhachHang = new TestAPP.NhanVien.Menu(username);
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
                     }
                     else if (account_type == "TX")
                     {
-                        Form formKhachHang = new TestAPP.TaiXe.Menu();
+                        Form formKhachHang = new TestAPP.TaiXe.Menu(username);
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
                     }
                     else if (account_type == "QT")
                     {
-                        Form formKhachHang = new TestAPP.QuanTri.Menu();
+                        Form formKhachHang = new TestAPP.QuanTri.Menu(username);
+                        this.Hide();
+                        formKhachHang.ShowDialog();
+                        this.Close();
+                    }
+                    else if (account_type == "DT")
+                    {
+                        Form formKhachHang = new TestAPP.DoiTac.Menu(username);
                         this.Hide();
                         formKhachHang.ShowDialog();
                         this.Close();
@@ -114,7 +121,7 @@ namespace Login
             }
             catch (Exception )
             {
-                string mess = "Đăng nhập không thành công, vui lòng kiểm tra thông tin";
+                string mess = "Đăng ký không thành công, vui lòng kiểm tra thông tin";
                 MessageBox.Show(mess, "Error");
             }
         }

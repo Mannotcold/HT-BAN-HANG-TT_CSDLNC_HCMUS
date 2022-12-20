@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using TestAPP.Register;
+using Login;
 
 namespace TestAPP.Register
 {
@@ -28,13 +29,54 @@ namespace TestAPP.Register
             
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         string acount_type = "";
         string type = "False";
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked == true)
+            {
+                acount_type = "TX";
+                checkBox2.Checked = false;
+                checkBox1.Checked = false;
+                checkBox4.Checked = false;
+            }
+        }
+
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                acount_type = "KH";
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                acount_type = "NV";
+                checkBox1.Checked = false;
+                checkBox3.Checked = false;
+                checkBox4.Checked = false;
+            }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked == true)
+            {
+                acount_type = "DT";
+                checkBox2.Checked = false;
+                checkBox1.Checked = false;
+                checkBox3.Checked = false;
+            }
+        }
+
+       
         //SqlConnection cnn;
         //SqlCommand command;
         //string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANG_TT;Integrated Security=True";
@@ -63,20 +105,12 @@ namespace TestAPP.Register
             {
                 string username = textBox1.Text.Trim();
                 string password = textBox3.Text.Trim();
-                if (checkBox1.Checked == true)
-                {
-                    acount_type = "KH";
-                        }
-                if (checkBox2.Checked == true)
-                    {
-                        acount_type = "NV";
-                    }
-                if (checkBox3.Checked == true)
-                    {
-                        acount_type = "TX";
-                    }
-                    connection.Open();
-                string sql = "insert into TAIKHOAN values ('" + username + "', '" + password + "','" + acount_type + "','" + type + "' ";
+               
+                
+               
+               
+                connection.Open();
+                string sql = "insert into TAIKHOAN values ('" + username + "', '" + password + "','" + acount_type + "','" + type + "' )";
 
                 SqlCommand com = new SqlCommand();
                 //Lấy dữ liệu về từ kết quả câu lệnh trên
@@ -103,12 +137,15 @@ namespace TestAPP.Register
             {
                 MessageBox.Show("lỗi kết nối");
             }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
 
-
-
-
-
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }
