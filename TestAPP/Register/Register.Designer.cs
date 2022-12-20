@@ -39,6 +39,8 @@ namespace TestAPP.Register
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -111,6 +113,7 @@ namespace TestAPP.Register
             this.checkBox1.TabIndex = 17;
             this.checkBox1.Text = "Khách hàng";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -121,6 +124,7 @@ namespace TestAPP.Register
             this.checkBox2.TabIndex = 18;
             this.checkBox2.Text = "Tài xế";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -137,7 +141,7 @@ namespace TestAPP.Register
             // 
             this.button1.BackColor = System.Drawing.Color.SpringGreen;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(135, 359);
+            this.button1.Location = new System.Drawing.Point(27, 355);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 22;
@@ -145,11 +149,36 @@ namespace TestAPP.Register
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(190, 209);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(60, 17);
+            this.checkBox4.TabIndex = 23;
+            this.checkBox4.Text = "Đối tác";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SpringGreen;
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(236, 355);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 30);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Đăng nhập";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 397);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
@@ -180,5 +209,7 @@ namespace TestAPP.Register
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button button2;
     }
 }

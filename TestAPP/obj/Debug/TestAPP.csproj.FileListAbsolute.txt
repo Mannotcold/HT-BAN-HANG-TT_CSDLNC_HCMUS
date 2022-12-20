@@ -14,3 +14,16 @@ D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Menu.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Menu.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Menu.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.TaiXe.Menu.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Update_TK.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.TaiXe.Thong_Tin_Ca_Nhan.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Menu.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Thong_Tin_Doi_Tac.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Thong_Tin_Nhan_Vien.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.TaiXe.Tiep_Nhan_Don_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Ky_Hop_Dong.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Thong_Tin_Quan_Tri.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Thong_Tin_Khach_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Hop_Dong.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.DS_Doi_Tac.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Cua_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Danh_Sach_Mon_An.resources

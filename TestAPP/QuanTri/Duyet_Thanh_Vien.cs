@@ -66,5 +66,26 @@ namespace TestAPP.QuanTri
             command.ExecuteNonQuery();
             MessageBox.Show("Xét duyệt thành công!");
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(str);
+            connection.Open();
+            string type = "False";
+            command = connection.CreateCommand();
+            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "'";
+            command.ExecuteNonQuery();
+            MessageBox.Show("Khóa thành công!");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

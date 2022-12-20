@@ -46,11 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoiTac\Ky_Hop_Dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Ky_Hop_Dong.Designer.cs">
+      <DependentUpon>Ky_Hop_Dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiTac\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiTac\Thong_Tin_Doi_Tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Thong_Tin_Doi_Tac.Designer.cs">
+      <DependentUpon>Thong_Tin_Doi_Tac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang\Cua_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\Cua_Hang.Designer.cs">
+      <DependentUpon>Cua_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang\Danh_Sach_Mon_An.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\Danh_Sach_Mon_An.Designer.cs">
+      <DependentUpon>Danh_Sach_Mon_An.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang\DS_Doi_Tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\DS_Doi_Tac.Designer.cs">
+      <DependentUpon>DS_Doi_Tac.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang\Menu.cs">
       <SubType>Form</SubType>
@@ -58,11 +94,29 @@
     <Compile Include="KhachHang\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang\Thong_Tin_Khach_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\Thong_Tin_Khach_Hang.Designer.cs">
+      <DependentUpon>Thong_Tin_Khach_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\Hop_Dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\Hop_Dong.Designer.cs">
+      <DependentUpon>Hop_Dong.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien\Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NhanVien\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\Thong_Tin_Nhan_Vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\Thong_Tin_Nhan_Vien.Designer.cs">
+      <DependentUpon>Thong_Tin_Nhan_Vien.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanTri\Menu.cs">
       <SubType>Form</SubType>
@@ -78,6 +132,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanTri\Thong_Tin_Quan_Tri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTri\Thong_Tin_Quan_Tri.Designer.cs">
+      <DependentUpon>Thong_Tin_Quan_Tri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTri\Update_TK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanTri\Update_TK.Designer.cs">
+      <DependentUpon>Update_TK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register\Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,14 +156,53 @@
     <Compile Include="TaiXe\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaiXe\Thong_Tin_Ca_Nhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiXe\Thong_Tin_Ca_Nhan.Designer.cs">
+      <DependentUpon>Thong_Tin_Ca_Nhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaiXe\Tiep_Nhan_Don_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiXe\Tiep_Nhan_Don_Hang.Designer.cs">
+      <DependentUpon>Tiep_Nhan_Don_Hang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoiTac\Ky_Hop_Dong.resx">
+      <DependentUpon>Ky_Hop_Dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Thong_Tin_Doi_Tac.resx">
+      <DependentUpon>Thong_Tin_Doi_Tac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\Cua_Hang.resx">
+      <DependentUpon>Cua_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\Danh_Sach_Mon_An.resx">
+      <DependentUpon>Danh_Sach_Mon_An.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\DS_Doi_Tac.resx">
+      <DependentUpon>DS_Doi_Tac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\Thong_Tin_Khach_Hang.resx">
+      <DependentUpon>Thong_Tin_Khach_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\Hop_Dong.resx">
+      <DependentUpon>Hop_Dong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\Thong_Tin_Nhan_Vien.resx">
+      <DependentUpon>Thong_Tin_Nhan_Vien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanTri\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -114,11 +219,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanTri\Thong_Tin_Quan_Tri.resx">
+      <DependentUpon>Thong_Tin_Quan_Tri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanTri\Update_TK.resx">
+      <DependentUpon>Update_TK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaiXe\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiXe\Thong_Tin_Ca_Nhan.resx">
+      <DependentUpon>Thong_Tin_Ca_Nhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiXe\Tiep_Nhan_Don_Hang.resx">
+      <DependentUpon>Tiep_Nhan_Don_Hang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,8 +250,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DoiTac\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
