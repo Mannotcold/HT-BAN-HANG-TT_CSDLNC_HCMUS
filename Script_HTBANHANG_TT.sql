@@ -1,6 +1,8 @@
-﻿CREATE DATABASE HT_BANHANGTT
+﻿CREATE DATABASE BANHANG_TT
 go
-use HT_BANHANGTT
+
+use BANHANG_TT
+
 CREATE TABLE QUANTRI
 (
    MAQT char(10) NOT NULL,
@@ -23,7 +25,7 @@ CREATE TABLE DOITAC
 (
 	MADT char(10) NOT NULL,
 	TEN_TK char(40) NOT NULL,
-	MASOTHUE char(10),
+	MASOTHUE char(12),
 	EMAIL varchar(50),
 	TENQUAN nvarchar(50),
 	NGUOIDAIDIEN nvarchar(50),
@@ -31,7 +33,7 @@ CREATE TABLE DOITAC
 	QUAN nvarchar(50),
 	LOAIAMTHUC nvarchar(50),
 	DIACHIKINHDOANH nvarchar(50),
-	SODIENTHOAI char(10),
+	SODIENTHOAI char(14),
 	SOLUONGCUAHANG char(10),
 	SOLUONGDHDUKIEN char(10)
 	PRIMARY KEY (MADT)
@@ -46,7 +48,6 @@ CREATE TABLE MONAN
 	MACH char(10)
 	PRIMARY KEY (MAMA)
 );
-ALTER TABLE MONAN ADD CHECK (TINHTRANGMONAN = 'Process' OR TINHTRANGMONAN = 'Noprocess')
 
 CREATE TABLE CUAHANG
 (
@@ -80,25 +81,24 @@ create table KHACHHANG
     MAKH char(10) NOT NULL,
 	TEN_TK char(40) NOT NULL,
     HOTEN_KH nvarchar(30),
-    DIENTHOAI_KH char(10),
+    DIENTHOAI_KH char(14),
     DIACHI_KH nvarchar(50),
-    EMAIL varchar(30),
+    EMAIL varchar(50),
     PRIMARY KEY (MAKH)
 );
+
 
 create table DONHANG
 (
     MADH char(10) NOT NULL,
     NGAYLAP datetime,
-    HINHTHUCTT varchar(10),
     DIACHIGIAO nvarchar(300),
-    PHISP float,
     PHIVC float,
     TONGTIEN float,
 	TINHTRANG char(50),
 	NGUOINHANHANG nvarchar(50),
     MAKH char(10) NOT NULL,
-    MATX char(10) NOT NULL,
+    MATX char(10),
 	MADT char(10) NOT NULL,--thêm mới
     PRIMARY KEY (MADH)
 );
@@ -127,24 +127,29 @@ CREATE TABLE NHANVIEN
     MANV char(10) NOT NULL,
 	TEN_TK char(40) NOT NULL,
     HOTEN_NV nvarchar(30),
-    DIENTHOAI_NV char(10),
+    DIENTHOAI_NV char(14),
     DIACHI_NV varchar(30),
-    EMAIL varchar(20)
+    EMAIL varchar(50)
     PRIMARY KEY (MANV)
 );
+
+
 CREATE TABLE TAIXE
 (
     MATX char(10) NOT NULL,
 	TEN_TK char(40) NOT NULL,
     HOTEN_TX nvarchar(30),
-    DIENTHOAI_TX char(10),
+    DIENTHOAI_TX char(14),
     DIACHI_TX varchar(30),
-    EMAIL varchar(20),
-    BIENSOXE varchar(5),
+    EMAIL varchar(50),
+    BIENSOXE varchar(16),
     TAIKHOANNGANHANG varchar(15),
     KHUVUCHOATDONG varchar(40),
     PRIMARY KEY (MATX)
 );
+
+
+
 CREATE TABLE PHANHOI
 (
 	MAPH char(10) NOT NULL,
@@ -153,6 +158,8 @@ CREATE TABLE PHANHOI
 	DANHGIA CHAR(7), -- LIKE OR DISLIKE
 	PRIMARY KEY(MAPH)
 );
+
+
 ALTER TABLE PHANHOI ADD CHECK (DANHGIA = 'LIKE' OR DANHGIA = 'DISLIKE')
 --QUANTRI-TAIKHOAN
 ALTER TABLE QUANTRI
@@ -210,11 +217,11 @@ ALTER TABLE HOPDONG
 ADD CONSTRAINT FK_HOPDONG_DOITAC
 FOREIGN KEY (MADT)
 REFERENCES DOITAC(MADT);
---THUCDON-MONAN
-ALTER TABLE THUCDON
-ADD CONSTRAINT FK_THUCDON_MONAN
-FOREIGN KEY (MAMA)
-REFERENCES MONAN(MAMA);
+----THUCDON-MONAN
+--ALTER TABLE THUCDON
+--ADD CONSTRAINT FK_THUCDON_MONAN
+--FOREIGN KEY (MAMA)
+--REFERENCES MONAN(MAMA);
 --HOPDONG-NHANVIEN
 ALTER TABLE HOPDONG
 ADD CONSTRAINT FK_HOPDONG_NHANVIEN
@@ -251,42 +258,3 @@ REFERENCES CUAHANG(MACH);
 
 --trigger
 --Tổng tiền hóa đơn là tổng tiền các chi tiết đơn hàng	
-DROP TRIGGER trigger_TongTien; 
-go
-create trigger trigger_TongTien		
-on CT_DONHANG
-for insert, delete, update	
-as
-begin
-	update DONHANG 
-	set TongTien = PHIVC + PHISP + (select sum(THANHTIEN) from CT_DONHANG
-	where DONHANG.MADH= CT_DONHANG.MADH)
-	where 
-	exists (select * from deleted d	 where d.MADH = DONHANG.MADH) or
-	exists (select * from inserted i where i.MADH = DONHANG.MADH) 
-end
-go
-
-go
---Thành tiền trong chi tiết hóa đơn là giá * số lượng món
-create trigger trigger_ThanhTien	
-on CT_DONHANG
-for insert, update, delete	as
-begin
-if update (SoLuong)
-	if exists (select SoLuong from CT_DONHANG where SoLuong < 0) 
-	begin
-		raiserror (N'Số lượng sản phẩm không hợp lệ', 10, 1)
-		rollback transaction
-	end
-
-	update CT_DONHANG
-	set THANHTIEN = ctdh.SoLuong * (select GIA_SP from MONAN where MONAN.MAMA = ctdh.MAMA)
-	from inserted i, MONAN ma, CT_DONHANG ctdh
-	where 
-		ma.MAMA = i.MAMA and
-		ma.MAMA = ctdh.MAMA
-end
-
-
-ALTER TABLE TAIXE DROP FK_DONHANG_TAIXE ;

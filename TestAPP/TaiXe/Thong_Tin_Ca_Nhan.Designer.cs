@@ -54,7 +54,7 @@ namespace TestAPP.TaiXe
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(166, 192);
+            this.label8.Location = new System.Drawing.Point(90, 196);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 18);
@@ -65,7 +65,7 @@ namespace TestAPP.TaiXe
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(175, 152);
+            this.label6.Location = new System.Drawing.Point(99, 156);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 18);
@@ -76,7 +76,7 @@ namespace TestAPP.TaiXe
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(168, 114);
+            this.label5.Location = new System.Drawing.Point(92, 118);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 18);
@@ -87,7 +87,7 @@ namespace TestAPP.TaiXe
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(168, 228);
+            this.label3.Location = new System.Drawing.Point(331, 75);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 18);
@@ -99,7 +99,7 @@ namespace TestAPP.TaiXe
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(274, 21);
+            this.label1.Location = new System.Drawing.Point(198, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 31);
@@ -110,7 +110,7 @@ namespace TestAPP.TaiXe
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 355);
+            this.label2.Location = new System.Drawing.Point(331, 201);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 18);
@@ -121,7 +121,7 @@ namespace TestAPP.TaiXe
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(147, 272);
+            this.label9.Location = new System.Drawing.Point(331, 118);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 18);
@@ -130,9 +130,10 @@ namespace TestAPP.TaiXe
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(247, 74);
+            this.textBox1.Location = new System.Drawing.Point(171, 75);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(96, 20);
             this.textBox1.TabIndex = 17;
             // 
@@ -140,7 +141,7 @@ namespace TestAPP.TaiXe
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(168, 76);
+            this.label10.Location = new System.Drawing.Point(92, 77);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 18);
@@ -149,7 +150,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(247, 116);
+            this.textBox2.Location = new System.Drawing.Point(171, 120);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(96, 20);
@@ -157,7 +158,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(247, 152);
+            this.textBox3.Location = new System.Drawing.Point(171, 156);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(96, 20);
@@ -165,7 +166,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(247, 192);
+            this.textBox4.Location = new System.Drawing.Point(171, 196);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(96, 20);
@@ -173,7 +174,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(247, 228);
+            this.textBox5.Location = new System.Drawing.Point(508, 77);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(96, 20);
@@ -181,7 +182,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(247, 272);
+            this.textBox6.Location = new System.Drawing.Point(508, 118);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(96, 20);
@@ -191,7 +192,7 @@ namespace TestAPP.TaiXe
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(70, 311);
+            this.label4.Location = new System.Drawing.Point(331, 157);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(164, 18);
@@ -200,7 +201,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(247, 311);
+            this.textBox7.Location = new System.Drawing.Point(508, 157);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(96, 20);
@@ -208,7 +209,7 @@ namespace TestAPP.TaiXe
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(247, 355);
+            this.textBox8.Location = new System.Drawing.Point(508, 201);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(96, 20);
@@ -216,7 +217,7 @@ namespace TestAPP.TaiXe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(12, 411);
+            this.button5.Location = new System.Drawing.Point(14, 255);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 27);
             this.button5.TabIndex = 26;
@@ -226,7 +227,7 @@ namespace TestAPP.TaiXe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(192, 411);
+            this.button1.Location = new System.Drawing.Point(508, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 27);
             this.button1.TabIndex = 27;
@@ -238,7 +239,7 @@ namespace TestAPP.TaiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(663, 323);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox8);

@@ -1,0 +1,106 @@
+﻿---------Phân quyền------------
+
+--tạo role người dùng
+Exec sp_addrole 'DOITAC'
+Exec sp_addrole 'KHACHHANG'
+Exec sp_addrole 'TAIXE'
+Exec sp_addrole 'NHANVIEN'
+Exec sp_addrole 'QUANTRI'
+--PHÂN QUYỀN ĐỐI TÁC
+GRANT SELECT
+ON DOITAC
+TO DOITAC
+GRANT SELECT, UPDATE,insert, delete
+ON CUAHANG
+TO DOITAC
+GRANT SELECT
+ON HOPDONG
+TO DOITAC
+
+
+GRANT INSERT, SELECT, UPDATE, DELETE
+ON MONAN
+TO DOITAC
+
+GRANT SELECT,update, insert
+ON DONHANG
+TO DOITAC
+
+GRANT SELECT
+ON DONHANG(TINHTRANG)
+TO DOITAC
+grant select
+on CT_DONHANG
+to DOITAC
+
+--PHÂN QUYỀN QUẢN TRỊ:
+ALTER ROLE [db_owner] ADD MEMBER QUANTRI
+
+--PHÂN QUYỀN KHÁCH HÀNG
+grant update, select
+on KHACHHANG
+to KHACHHANG
+
+grant select
+on DOITAC
+to KHACHHANG
+
+grant select
+on CUAHANG
+to KHACHHANG
+
+grant select
+on MONAN
+to KHACHHANG
+
+
+grant select
+on DONHANG
+to KHACHHANG
+
+grant update
+on DONHANG(TINHTRANG)
+to KHACHHANG
+
+grant select
+on CT_DONHANG
+to KHACHHANG
+
+-- PHÂN QUYỀN NHÂN VIÊN
+Grant INSERT,SELECT
+on DOITAC
+to NHANVIEN
+
+Grant UPDATE
+on DOITAC(NGUOIDAIDIEN)
+to NHANVIEN
+
+Grant SELECT
+on HOPDONG
+to NHANVIEN
+
+Grant SELECT, UPDATE
+on HOPDONG(THOIGIANHIEULUC)
+to NHANVIEN
+
+Grant UPDATE
+on HOPDONG(MADT)
+to NHANVIEN
+
+    -- PHÂN QUYỀN TÀI XẾ
+Grant INSERT,SELECT,UPDATE
+on TAIXE
+to TAIXE
+
+Grant SELECT,update
+on DONHANG
+to TAIXE
+
+Grant UPDATE,select
+on DONHANG(TINHTRANG)
+to TAIXE
+grant SELECT 
+on CT_DONHANG
+to taixe
+
+

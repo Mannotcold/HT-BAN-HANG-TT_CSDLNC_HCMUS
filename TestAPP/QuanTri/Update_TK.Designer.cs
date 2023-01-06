@@ -57,7 +57,7 @@ namespace TestAPP.QuanTri
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 27);
             this.button5.TabIndex = 13;
-            this.button5.Text = "Quay lại";
+            this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -69,7 +69,7 @@ namespace TestAPP.QuanTri
             this.groupBox1.Size = new System.Drawing.Size(500, 314);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin";
+            this.groupBox1.Text = "Thông tin tài khoản";
             // 
             // dataGridView1
             // 
@@ -82,14 +82,14 @@ namespace TestAPP.QuanTri
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(452, 398);
+            this.textBox1.Location = new System.Drawing.Point(446, 398);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(99, 20);
             this.textBox1.TabIndex = 11;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(310, 394);
+            this.button2.Location = new System.Drawing.Point(314, 394);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 27);
             this.button2.TabIndex = 9;
@@ -99,12 +99,13 @@ namespace TestAPP.QuanTri
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(169, 393);
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Location = new System.Drawing.Point(348, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 29);
             this.button1.TabIndex = 8;
             this.button1.Text = "Hiển thị danh sách";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2

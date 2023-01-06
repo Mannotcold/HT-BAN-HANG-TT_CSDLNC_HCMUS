@@ -28,12 +28,11 @@ namespace TestAPP.QuanTri
         }
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=BANHANG_TT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         private void Thong_Tin_Quan_Tri_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(TaiKhoan);
             try
             {
                 connection = new SqlConnection(str);
@@ -69,7 +68,7 @@ namespace TestAPP.QuanTri
             connection.Open();
             SqlCommand com = new SqlCommand();
             com.CommandType = CommandType.Text;
-            com.CommandText = "update QUANTRI set MAQT = '" + textBox1.Text + "', HOTEN_QT = '" + textBox2.Text + "', DIENTHOAI_QT = '" + textBox3.Text + "',DIACHI_QT = '" + textBox4.Text + "' where TEN_TK = '" + TaiKhoan + "'";
+            com.CommandText = "update QUANTRI set MAQT = '" + textBox1.Text + "', HOTEN_QT = '" + textBox2.Text + "', SDT_QT = '" + textBox3.Text + "',DIACHI_QT = '" + textBox4.Text + "' where TEN_TK = '" + TaiKhoan + "'";
             com.Connection = connection;
             //loaddata();
             int kq = com.ExecuteNonQuery();
@@ -86,7 +85,7 @@ namespace TestAPP.QuanTri
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)

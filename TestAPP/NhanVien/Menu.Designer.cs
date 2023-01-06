@@ -51,17 +51,18 @@ namespace TestAPP.NhanVien
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(234, 277);
+            this.button3.Location = new System.Drawing.Point(234, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(221, 40);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Theo dõi thu nhập";
+            this.button3.Text = "Thống kê";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(234, 184);
+            this.button2.Location = new System.Drawing.Point(234, 161);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(221, 40);
             this.button2.TabIndex = 11;
@@ -83,11 +84,11 @@ namespace TestAPP.NhanVien
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 389);
+            this.button4.Location = new System.Drawing.Point(234, 301);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(221, 40);
             this.button4.TabIndex = 13;
-            this.button4.Text = "Theo dõi thu nhập";
+            this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -95,7 +96,7 @@ namespace TestAPP.NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 450);
+            this.ClientSize = new System.Drawing.Size(688, 353);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

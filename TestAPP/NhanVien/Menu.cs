@@ -33,7 +33,7 @@ namespace TestAPP.NhanVien
         {
             this.Hide();
             Form frmKH_XemTT = new NhanVien.Thong_Tin_Nhan_Vien(TaiKhoan);
-            MessageBox.Show(TaiKhoan);
+            
             frmKH_XemTT.ShowDialog();
             this.Show();
         }
@@ -50,6 +50,14 @@ namespace TestAPP.NhanVien
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form frmKH_XemTT = new NhanVien.Thong_Ke_Don_Hang();
+            frmKH_XemTT.ShowDialog();
+            this.Show();
         }
     }
 }

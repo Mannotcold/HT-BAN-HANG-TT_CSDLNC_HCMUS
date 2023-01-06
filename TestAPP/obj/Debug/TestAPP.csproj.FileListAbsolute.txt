@@ -25,5 +25,11 @@ D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.QuanTri.Thong_Tin_Quan_Tri.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Thong_Tin_Khach_Hang.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Hop_Dong.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.DS_Doi_Tac.resources
-D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Cua_Hang.resources
 D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Danh_Sach_Mon_An.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Update_Cua_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Update_Thuc_Don.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Quan_Ly_Don_Dat_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.KhachHang.Theo_Doi_Don_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.NhanVien.Thong_Ke_Don_Hang.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.TaiXe.Xem_Don_Hang_Nhan.resources
+D:\CSDLNC2\TestAPP\obj\Debug\TestAPP.DoiTac.Quan_Ly_So_Lieu.resources

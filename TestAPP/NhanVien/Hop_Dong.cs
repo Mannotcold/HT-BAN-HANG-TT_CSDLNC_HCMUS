@@ -20,7 +20,7 @@ namespace TestAPP.NhanVien
 
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=BANHANG_TT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
 
@@ -46,9 +46,9 @@ namespace TestAPP.NhanVien
             connection = new SqlConnection(str);
             connection.Open();
             string MAHD = textBox1.Text;
-            string sql = "select * from TAIKHOAN WHERE TEN_TK = '" + MAHD + "'";
+            string sql = "select * from HOPDONG WHERE MAHD = '" + MAHD + "'";
             command = connection.CreateCommand();
-            command.CommandText = "select * from TAIKHOAN WHERE TEN_TK = '" + MAHD + "'";
+            command.CommandText = "select * from HOPDONG WHERE MAHD = '" + MAHD + "'";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -68,6 +68,21 @@ namespace TestAPP.NhanVien
             table.Clear();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
