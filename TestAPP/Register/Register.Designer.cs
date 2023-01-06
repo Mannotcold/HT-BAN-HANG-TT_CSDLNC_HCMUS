@@ -51,9 +51,9 @@ namespace TestAPP.Register
             this.label2.Location = new System.Drawing.Point(32, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 31);
+            this.label2.Size = new System.Drawing.Size(297, 31);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Đăng ký Foood Paradise";
+            this.label2.Text = "Đăng ký Food Paradise";
             // 
             // label1
             // 
@@ -118,7 +118,7 @@ namespace TestAPP.Register
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(56, 313);
+            this.checkBox2.Location = new System.Drawing.Point(260, 262);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(55, 17);
             this.checkBox2.TabIndex = 18;
@@ -141,7 +141,7 @@ namespace TestAPP.Register
             // 
             this.button1.BackColor = System.Drawing.Color.SpringGreen;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(27, 355);
+            this.button1.Location = new System.Drawing.Point(245, 325);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 22;
@@ -152,7 +152,7 @@ namespace TestAPP.Register
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(190, 209);
+            this.checkBox4.Location = new System.Drawing.Point(260, 209);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(60, 17);
             this.checkBox4.TabIndex = 23;
@@ -164,11 +164,11 @@ namespace TestAPP.Register
             // 
             this.button2.BackColor = System.Drawing.Color.SpringGreen;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(236, 355);
+            this.button2.Location = new System.Drawing.Point(47, 325);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 30);
             this.button2.TabIndex = 24;
-            this.button2.Text = "Đăng nhập";
+            this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

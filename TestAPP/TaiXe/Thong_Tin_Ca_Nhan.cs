@@ -30,12 +30,11 @@ namespace TestAPP.TaiXe
 
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=BANHANG_TT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         private void Thong_Tin_Ca_Nhan_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(TaiKhoan);
             try
             {
                 connection = new SqlConnection(str);

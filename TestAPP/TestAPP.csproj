@@ -58,23 +58,41 @@
     <Compile Include="DoiTac\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoiTac\Quan_Ly_Don_Dat_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Quan_Ly_Don_Dat_Hang.Designer.cs">
+      <DependentUpon>Quan_Ly_Don_Dat_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiTac\Quan_Ly_So_Lieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Quan_Ly_So_Lieu.Designer.cs">
+      <DependentUpon>Quan_Ly_So_Lieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoiTac\Thong_Tin_Doi_Tac.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoiTac\Thong_Tin_Doi_Tac.Designer.cs">
       <DependentUpon>Thong_Tin_Doi_Tac.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoiTac\Update_Cua_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Update_Cua_Hang.Designer.cs">
+      <DependentUpon>Update_Cua_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiTac\Update_Thuc_Don.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiTac\Update_Thuc_Don.Designer.cs">
+      <DependentUpon>Update_Thuc_Don.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="KhachHang\Cua_Hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhachHang\Cua_Hang.Designer.cs">
-      <DependentUpon>Cua_Hang.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang\Danh_Sach_Mon_An.cs">
       <SubType>Form</SubType>
@@ -94,6 +112,12 @@
     <Compile Include="KhachHang\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang\Theo_Doi_Don_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang\Theo_Doi_Don_Hang.Designer.cs">
+      <DependentUpon>Theo_Doi_Don_Hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="KhachHang\Thong_Tin_Khach_Hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +135,12 @@
     </Compile>
     <Compile Include="NhanVien\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien\Thong_Ke_Don_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien\Thong_Ke_Don_Hang.Designer.cs">
+      <DependentUpon>Thong_Ke_Don_Hang.cs</DependentUpon>
     </Compile>
     <Compile Include="NhanVien\Thong_Tin_Nhan_Vien.cs">
       <SubType>Form</SubType>
@@ -168,20 +198,35 @@
     <Compile Include="TaiXe\Tiep_Nhan_Don_Hang.Designer.cs">
       <DependentUpon>Tiep_Nhan_Don_Hang.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaiXe\Xem_Don_Hang_Nhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiXe\Xem_Don_Hang_Nhan.Designer.cs">
+      <DependentUpon>Xem_Don_Hang_Nhan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DoiTac\Ky_Hop_Dong.resx">
       <DependentUpon>Ky_Hop_Dong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoiTac\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Quan_Ly_Don_Dat_Hang.resx">
+      <DependentUpon>Quan_Ly_Don_Dat_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Quan_Ly_So_Lieu.resx">
+      <DependentUpon>Quan_Ly_So_Lieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiTac\Thong_Tin_Doi_Tac.resx">
       <DependentUpon>Thong_Tin_Doi_Tac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Update_Cua_Hang.resx">
+      <DependentUpon>Update_Cua_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiTac\Update_Thuc_Don.resx">
+      <DependentUpon>Update_Thuc_Don.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang\Cua_Hang.resx">
-      <DependentUpon>Cua_Hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\Danh_Sach_Mon_An.resx">
       <DependentUpon>Danh_Sach_Mon_An.cs</DependentUpon>
@@ -192,6 +237,9 @@
     <EmbeddedResource Include="KhachHang\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang\Theo_Doi_Don_Hang.resx">
+      <DependentUpon>Theo_Doi_Don_Hang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\Thong_Tin_Khach_Hang.resx">
       <DependentUpon>Thong_Tin_Khach_Hang.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien\Thong_Ke_Don_Hang.resx">
+      <DependentUpon>Thong_Ke_Don_Hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\Thong_Tin_Nhan_Vien.resx">
       <DependentUpon>Thong_Tin_Nhan_Vien.cs</DependentUpon>
@@ -236,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaiXe\Tiep_Nhan_Don_Hang.resx">
       <DependentUpon>Tiep_Nhan_Don_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiXe\Xem_Don_Hang_Nhan.resx">
+      <DependentUpon>Xem_Don_Hang_Nhan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

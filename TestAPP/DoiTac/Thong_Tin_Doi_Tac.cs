@@ -29,12 +29,11 @@ namespace TestAPP.DoiTac
 
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=BANHANG_TT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         private void Thong_Tin_Doi_Tac_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(TaiKhoan);
             try
             {
                 connection = new SqlConnection(str);
@@ -72,7 +71,7 @@ namespace TestAPP.DoiTac
                 connection.Close();
             }
         }
-
+        // Cập nhập thông tin 
         private void button1_Click(object sender, EventArgs e)
         {
             string MASOTHUE = textBox2.Text;
@@ -101,11 +100,11 @@ namespace TestAPP.DoiTac
             int kq = com.ExecuteNonQuery();
             if (kq > 0)
             {
-                MessageBox.Show("Sửa thành công! ");
+                MessageBox.Show("Update thành công! ");
             }
             else
             {
-                MessageBox.Show("Sửa không thành công!");
+                MessageBox.Show("Update không thành công!");
             }
         }
 

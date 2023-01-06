@@ -48,7 +48,7 @@ namespace TestAPP.QuanTri
         {
             this.Hide();
             Form frmQT_XemTT = new QuanTri.Thong_Tin_Quan_Tri(TaiKhoan);
-            MessageBox.Show(TaiKhoan);
+          
             frmQT_XemTT.ShowDialog();
             this.Show();
         }

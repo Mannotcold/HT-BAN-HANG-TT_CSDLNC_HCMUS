@@ -12,17 +12,30 @@ using TestAPP.Register;
 using TestAPP.QuanTri;
 
 namespace TestAPP.KhachHang
-{
+{ 
     public partial class DS_Doi_Tac : Form
     {
+
+        private string MADT;
+        private string MAKH;
+        private string HOTEN_KH;
+        private string DIACHI_KH;
         public DS_Doi_Tac()
         {
             InitializeComponent();
         }
 
+        public DS_Doi_Tac(string makh, string ht, string dc)
+        {
+            InitializeComponent();
+            this.MAKH = makh;
+            this.HOTEN_KH = ht;
+            this.DIACHI_KH = dc;
+        }
+
         SqlConnection connection;
         SqlCommand command;
-        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=HT_BANHANGTT;Integrated Security=True";
+        string str = "Data Source=LAPTOP-O8J01RU8;Initial Catalog=BANHANG_TT;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         SqlDataAdapter adapter2 = new SqlDataAdapter();
@@ -37,6 +50,7 @@ namespace TestAPP.KhachHang
             table.Clear();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+
         }
         private void DS_Doi_Tac_Load(object sender, EventArgs e)
         {
@@ -49,7 +63,7 @@ namespace TestAPP.KhachHang
         {
             connection = new SqlConnection(str);
             connection.Open();
-            string MADT = textBox1.Text;
+            MADT = textBox1.Text;
             command = connection.CreateCommand();
             command.CommandText = "select * from DOITAC WHERE MADT = '" + MADT + "'";
             adapter.SelectCommand = command;
@@ -58,7 +72,6 @@ namespace TestAPP.KhachHang
             dataGridView1.DataSource = table;
         }
 
-        string MADT;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int i;
@@ -94,7 +107,7 @@ namespace TestAPP.KhachHang
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form formMonAn = new Danh_Sach_Mon_An(MACH);
+            Form formMonAn = new Danh_Sach_Mon_An(MACH,MAKH,MADT,HOTEN_KH, DIACHI_KH);
             this.Hide();
             formMonAn.ShowDialog();
             this.Close();
@@ -116,6 +129,11 @@ namespace TestAPP.KhachHang
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
