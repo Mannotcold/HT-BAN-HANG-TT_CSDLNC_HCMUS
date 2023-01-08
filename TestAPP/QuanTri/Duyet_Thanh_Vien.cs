@@ -60,9 +60,10 @@ namespace TestAPP.QuanTri
         {
             connection = new SqlConnection(str);
             connection.Open();
+
             string type = "True";
             command = connection.CreateCommand();
-            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "'";
+            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "'where TEN_TK = '" + textBox1.Text + "'";
             command.ExecuteNonQuery();
             MessageBox.Show("Xét duyệt thành công!");
         }
@@ -78,7 +79,7 @@ namespace TestAPP.QuanTri
             connection.Open();
             string type = "False";
             command = connection.CreateCommand();
-            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "'";
+            command.CommandText = "UPDATE TAIKHOAN set TRANGTHAI = '" + type + "' where TEN_TK = '" + textBox1.Text + "'";
             command.ExecuteNonQuery();
             MessageBox.Show("Khóa thành công!");
         }

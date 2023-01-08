@@ -127,13 +127,13 @@ namespace TestAPP.NhanVien
             for (int i = 0; i < sc - 1; i++)
                 thanhtien += float.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) - float.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) * 10 / 100;
             TONG = thanhtien.ToString();
-            MessageBox.Show("Thu nhập của tài xế là: " + TONG);
+            MessageBox.Show("Thu nhập của đối tác là: " + TONG);
         }
 
         void ThongKeDH()
         {
             int sc = dataGridView1.Rows.Count;
-            textBox1.Text = sc.ToString();
+            textBox2.Text = sc.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)

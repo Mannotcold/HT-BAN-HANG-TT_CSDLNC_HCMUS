@@ -96,8 +96,6 @@ namespace Login
                 {
                     MessageBox.Show("Bạn đăng nhập không thành công");
                 }
-
-                
             }
             catch(Exception ex)
             {
